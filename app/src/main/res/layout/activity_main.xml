@@ -14,6 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/city" />
 
     <EditText
@@ -21,12 +22,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:autoLink="web"
         android:ems="10"
         android:hint="Enter your link"
         android:inputType="textUri|textPersonName"
         android:minHeight="48dp"
+        android:textAlignment="center"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/image"
         app:layout_constraintStart_toStartOf="@+id/image"
         app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CFCFCF"
+        android:backgroundTintMode="src_over"
+        android:text="show picture"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/link"
+        app:layout_constraintStart_toStartOf="@+id/link"
+        app:layout_constraintTop_toBottomOf="@+id/link" />
 </androidx.constraintlayout.widget.ConstraintLayout>
